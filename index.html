@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Player</title>
+<script src="https://www.gstatic.com/cast/sdk/libs/caf_receiver/v3/cast_receiver_framework.js"></script>
+<style>
+  html, body { margin: 0; height: 100%; background: #141414; color: #f2f2f2; font-family: sans-serif; }
+  body { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; }
+  h1 { color: #2F80FF; font-size: 56px; margin: 0; }
+  p { font-size: 28px; margin: 0; }
+</style>
+</head>
+<body>
+<h1>Player</h1>
+<p>Abra o app Player na sua TV</p>
+<script>
+  // Receptor mínimo para aparelhos sem o app Android TV: o Cast Connect abre o app na TV com Google TV.
+  cast.framework.CastReceiverContext.getInstance().start();
+</script>
+</body>
+</html>
